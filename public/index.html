@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Welcome to Firebase Hosting</title>
 
-
-<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<!-- TODO: set up these scripts but seems duplicated below the closing script tag. -->
+<!-- <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script> -->
 <!-- <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
@@ -52,13 +55,14 @@
     </style>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
+    <div id = "root"></div>
+    <!-- <div id="message">
+      <h2>Welcome to </h2>
       <h1>Firebase Hosting Setup Complete</h1>
       <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <p id="load">Firebase SDK Loading&hellip;</p> -->
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -82,5 +86,9 @@
         }
       });
     </script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
