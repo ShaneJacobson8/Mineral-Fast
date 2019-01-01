@@ -7,10 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-  
-      {/* </div> */}
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="/">Mineral Fast</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -18,24 +16,27 @@ class App extends Component {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/GetStarted">Get Started <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
+          {/* If I want to change to dropdown menu list */}
+          {/* <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/Products" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Store
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Mineral</a>
               <a class="dropdown-item" href="#">Another action</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+              <a class="dropdown-item" href="/Store">See all Products</a>
+            </div> */}
+            <li class="nav-item">
+            <a class="nav-link" href="/Store">Store</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Transformation">Transformation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="/ContactUs">Contact Us</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -45,7 +46,13 @@ class App extends Component {
       </div>
     </nav>
     <Routing />
+    {/* <nav class="navbar sticky-top navbar-light bg-light"> */}
+    <nav class="navbar fixed-bottom navbar-light">
+    <a class="navbar-brand">Property of Mineral Fast</a>
+    <a class="nav-link" href="/admin">Admin Login</a>
+  </nav>
     </div>
+    
     );
   }
 }
