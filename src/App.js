@@ -2,21 +2,23 @@ import React, { Component } from "react";
 import "./App.css";
 // import Home from "./components/Home";
 import Routing from "./Routing";
+// import firebase from "./firebase.js";
 
 class App extends Component {
   render() {
     return (
+  
       <div className="App">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/">Mineral Fast</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="/">Mineral Fast</a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
       </button>
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/GetStarted">Get Started</a>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item">
+            <a className="nav-link" href="/GetStarted">Get Started</a>
           </li>
           {/* TODO: get each one to stay bold when current page.   <a class="nav-link" href="/GetStarted">Get Started <span class="sr-only">(current)</span></a> */}
           
@@ -31,32 +33,34 @@ class App extends Component {
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Store">See all Products</a>
             </div> */}
-            <li class="nav-item">
-            <a class="nav-link" href="/Store">Store</a>
+            <li className="nav-item">
+            <a className="nav-link" href="/Store">Store</a>
             </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Transformation">Transformation</a>
+          <li className="nav-item">
+            <a className="nav-link" href="/Transformation">Transformation</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/ContactUs">Contact Us</a>
+          <li className="nav-item">
+            <a className="nav-link" href="/ContactUs">Contact Us</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form className="form-inline my-2 my-lg-0">
+          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+      
       </div>
     </nav>
-    <Routing />
-    {/* <nav class="navbar sticky-top navbar-light bg-light"> */}
-    {/* <nav class="navbar fixed-bottom navbar-light bg-light"> */}
 
-    <nav class="navbar fixed-bottom navbar-light">
-    <a class="navbar-brand">Property of Mineral Fast</a>
-    <a class="nav-link" href="/Admin">Admin Login</a>
+    <Routing />
+    {/* <nav className="navbar sticky-top navbar-light bg-light"> */}
+    {/* <nav className="navbar fixed-bottom navbar-light bg-light"> */}
+
+    <nav className="navbar fixed-bottom navbar-light">
+    <a className="navbar-brand">Property of Mineral Fast</a>
+    <a className="nav-link-admin" href="./Admin">Admin</a>
   </nav>
     </div>
-    
+
     );
   }
 }

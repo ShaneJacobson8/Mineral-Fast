@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from 'react-router-dom';
 
 class Home extends Component {
     render() {
@@ -33,6 +33,9 @@ Just as it is detrimental drinking too much water, the same is true in taking in
 <br/>
 <br/>
 Sodium, potassium and chloride are special minerals referred to as electrolytes. They carry electrical charges wherever water in the body is found. Every cell in the body is constantly going through an exchange of fluids from inside and outside the cell.  This process happens with the help of sodium and potassium.  This exchange is a delicate exchange that can be interrupted when there isn’t enough of these minerals to complete that exchange.  Fluid can get trapped, and pressure can build in and out of the cell. 
+ <br/>
+ <br/>
+ Because of this, fasting provides a full body cellular cleanse.  It can assist the body in renewal and regeneration.  The number of massive weight loss and healing stories are well in the hundreds of thousands.  All it takes is commitment, determination and faith in the process.  And we are here to guide you through that.  This site will give you all the tools necessary to guide you through this process safely and successfully.  Welcome to our fasting family!!!!!
  </p>
   </div>
 </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 class ContactUs extends Component {
     render() {
@@ -14,13 +14,13 @@ class ContactUs extends Component {
            <br/>
            <br/>
            <div>
-            <button><Link to='/ContactUsForm' type="submit" class="btn btn-primary">Click to Contact Us</Link></button>
+            <button><Link to='/ContactUsForm' type="submit" className="btn btn-primary">Click to Contact Us</Link></button>
             <br/>
             <br/>
-            <button><Link to='/TransformationForm' type="submit" class="btn btn-primary">Click to Submit a Transformation</Link></button>
+            <button><Link to='/TransformationForm' type="submit" className="btn btn-primary">Click to Submit a Transformation</Link></button>
             <br/>
             <br/>
-            <button><Link to='/SignUp' type="submit" class="btn btn-primary">Click to Sign Up for Special Offers</Link></button>
+            <button><Link to='/SignUp' type="submit" className="btn btn-primary">Click to Sign Up for Special Offers</Link></button>
           
             </div>
 
