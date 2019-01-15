@@ -56,7 +56,7 @@ class TransformationForm extends Component {
               <input
                 type="text"
                 name="transformationFirstName"
-                className="form-control"
+                class="form-control"
                 placeholder="First name"
                 onChange={this.handleChange}
                 value={this.state.transformationFirstName}
@@ -66,7 +66,7 @@ class TransformationForm extends Component {
               <input
                 type="text"
                 name="transformationLastName"
-                className="form-control"
+                class="form-control"
                 placeholder="Last name"
                 onChange={this.handleChange}
                 value={this.state.transformationLastName}
@@ -79,7 +79,7 @@ class TransformationForm extends Component {
             <input
               type="email"
               name="transformationEmailAddress"
-              className="form-control"
+              class="form-control"
               id="exampleFormControlInput1"
               placeholder="name@example.com"
               onChange={this.handleChange}
@@ -92,7 +92,7 @@ class TransformationForm extends Component {
             </label>
             <textarea
               name="transformationMessage"
-              className="form-control"
+              class="form-control"
               id="exampleFormControlTextarea1"
               rows="6"
               onChange={this.handleChange}
@@ -106,7 +106,7 @@ class TransformationForm extends Component {
             <input
               name="transformationFile"
               type="file"
-              className="form-control-file"
+              class="form-control-file"
               id="exampleFormControlFile1"
               onChange={this.handleChange}
               value={this.state.transformationFile}
