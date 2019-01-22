@@ -6,13 +6,6 @@ import Routing from "./Routing";
 
 class App extends Component {
   render() {
-
-
-    // let filteredinfo = this.props.info.filter(
-    //   (info) => {
-    //     return info.name.indexof(this.state.search) != -1
-    //   }
-    // )
     
     
     return (

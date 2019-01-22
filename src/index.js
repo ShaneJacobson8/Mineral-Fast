@@ -4,14 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// const config = {
-//     apikey: "",
-//     authDomain: "",
-//     databaseURL: "",
-//     storageBucket: "",    
 
-// }; 
-// firebase.initializeApp(config);
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
