@@ -98,9 +98,9 @@ class Admin extends Component {
           id: item,
           title: items[item].title,
           user: items[item].user,
-          signUpFirstName: items[item].signUpFirstName,
-          signUpLastName: items[item].signUpLastName,
-          signUpEmailAddress: items[item].signUpEmailAddress
+          // signUpFirstName: items[item].signUpFirstName,
+          // signUpLastName: items[item].signUpLastName,
+          // signUpEmailAddress: items[item].signUpEmailAddress
         })
       }
       this.setState({
@@ -235,18 +235,19 @@ class Admin extends Component {
                 </form>
               </section>
             </div>
-            </Fragment>
+            
             {/* return SignUp List */}
   <div className='display-container'>
-
-  <section className='display-item'>
+  <section className='display-signUp'>
   <div className="wrapper">
+  <h2>Subscriber</h2>
+<br/>
     <ul>
       {this.state.items.map((item) => {
         return (
           <li key={item.id}>
             <h3>{item.title}</h3>
-            {/* TODO figure out how to  */}
+            {/* TODO figure out how to return name */}
             <p>Subscriber id: {item.id}
             {/* user: this.state.user.firstName || this.state.user.emailAddress */}
             {item.user === this.state.user.firstName || item.emailAddress === this.state.user.emailAddress ?
@@ -260,6 +261,33 @@ class Admin extends Component {
           </div>
           </section>
     </div>
+
+               {/* return Transformations List */}
+  <div className='display-container'>
+<section className='display-transformation'>
+<div className="wrapper">
+<h2>Transformation</h2>
+<br/>
+  <ul>
+    {this.state.items.map((item) => {
+      return (
+        <li key={item.id}>
+          <h3>{item.title}</h3>
+          {/* TODO figure out how to return name */}
+          <p>Transformation id: {item.id}
+          {/* user: this.state.user.firstName || this.state.user.emailAddress */}
+          {item.user === this.state.user.firstName || item.emailAddress === this.state.user.emailAddress ?
+                 <button onClick={() => this.removeItem(item.id)} className="btn btn-primary">Remove Transformation</button> : null}
+                 {/* <button><Link to='/SignUp' type="submit" className="btn btn-primary">Click to Sign Up for Special Offers</Link></button> */}
+          </p>
+              </li>
+            )
+          })}
+        </ul>
+        </div>
+        </section>
+  </div>
+    </Fragment>
 
 
           </div>
