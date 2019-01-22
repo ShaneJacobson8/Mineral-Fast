@@ -247,7 +247,7 @@ class Admin extends Component {
           <li key={item.id}>
             <h3>{item.title}</h3>
             {/* TODO figure out how to  */}
-            <p>Subscriber First Name: {item.id}
+            <p>Subscriber id: {item.id}
             {/* user: this.state.user.firstName || this.state.user.emailAddress */}
             {item.user === this.state.user.firstName || item.emailAddress === this.state.user.emailAddress ?
                    <button onClick={() => this.removeItem(item.id)} className="btn btn-primary">Remove Subscriber</button> : null}
