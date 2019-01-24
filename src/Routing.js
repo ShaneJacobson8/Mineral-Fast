@@ -9,7 +9,7 @@ import Admin from "./components/Admin";
 import SignUp from "./components/SignUp";
 import ContactUsForm from "./components/ContactUsForm";
 import TransformationForm from "./components/TransformationForm";
-
+import UpdateForm from "./components/UpdateForm";
 
 function Routing() {
   return (
@@ -24,6 +24,7 @@ function Routing() {
         <Route path="/SignUp" component={SignUp} />
         <Route path="/ContactUsForm" component={ContactUsForm} />
         <Route path="/TransformationForm" component={TransformationForm} />
+        <Route path="/UpdateForm" component={UpdateForm} />
       </Switch>
     </Router>
   );
