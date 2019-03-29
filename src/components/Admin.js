@@ -138,7 +138,7 @@ class Admin extends Component {
     itemRef.remove();
   }
   updateItem(param) {
-    history.push('/updateForm', {admin: {firstName: param }})
+    history.push('/updateForm', {admin: {item: param }})
     history.go(0)
   }
 
@@ -401,7 +401,7 @@ class Admin extends Component {
                               </button>
                               <br />
                               <button
-                              onClick={() => this.updateItem(item.firstName)} className="btn btn-secondary"
+                              onClick={() => this.updateItem(item)} className="btn btn-secondary"
                                 >Update Subscriber
                               </button>
                               {/* ) : null} */}

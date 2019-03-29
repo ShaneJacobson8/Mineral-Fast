@@ -10,8 +10,9 @@ class UpdateForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            firstName: this.props.location.state.admin.firstName,
-            lastName: this.props.location.state.admin.lastName,
+            item: [],
+            // firstName: this.props.location.state.admin.firstName,
+            // lastName: this.props.location.state.admin.lastName,
             signUp: [ {
             signUpFirstName: '',
             signUpLastName: '',
@@ -22,7 +23,10 @@ class UpdateForm extends Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        //  not sure on handle below
+        this.handleUpdatItem = this.handleUpdateItem.bind(this);
     }
+   
     handleChange(e) {
         this.setState({
             [e.target.name]: e.target.value
@@ -56,13 +60,19 @@ class UpdateForm extends Component {
     //     const itemRef = firebase.database().ref(`/SignUp/${itemId}`)
     //     itemRef.update();
     // }
-    updateItem = async firstName => {
-        const newData = JSON.stringify ({
-            firstName: this.state.firstName,
-            lastName: this.state.signUpLastName,
-            emailAddress: this.state.signUpEmailAddress
-        })
-        
+
+
+    // updateItem = async firstName => {
+    //     const newData = JSON.stringify ({
+    //         firstName: this.state.firstName,
+    //         lastName: this.state.signUpLastName,
+    //         emailAddress: this.state.signUpEmailAddress
+    //     })
+    // } 
+
+    handleUpdateItem = () => {    
+        this.setState({ newData: this.state.updateItem });
+    }
         
         // await fetch ("apiURL" + `/` + firstName, {
         //     method: "PUT",
@@ -72,7 +82,7 @@ class UpdateForm extends Component {
         //     }
         // });
         // await this.getSignUp();
-    }
+    
 componentDidMount() {
     const itemsRef = firebase.database().ref("SignUp");
     itemsRef.on("value", (snapshot) => {
@@ -92,8 +102,8 @@ componentDidMount() {
 }
  
 
-
     render() {
+       
         const signUp = this.state.signUp;
         return (
         <div>
@@ -105,14 +115,14 @@ componentDidMount() {
 
                 <form onSubmit={e => this.handleUpdateItem(signUp._id)}>
                 <div className="form-group">
-                  <input type="text" className="form-control" id="exampleInputFirstName" value={this.state.firstName} onChange={e => this.setState(
+                  <input type="text" className="form-control" id="exampleInputFirstName" value={this.state.item} onChange={e => this.setState(
                         { firstName: e.target.value })
                       } />
                 </div>
                 </form>
               </div>))}
          
-        <button type="submit" className="btn btn-primary" onClick={() => this.updateItem(signUp.firstName)}>
+        <button type="submit" className="btn btn-primary" onClick={() => this.setState(signUp.firstName)}>
             Update
                       </button>
             {/* <button className="btn btn-primary" onClick={() => this.handleUpdateItem(signUp._id)}> */}
